@@ -178,9 +178,8 @@ const App = () => {
         <Route
           path="/referral-verification"
           element={
-            <PublicRoute>
+
               <ReferralCode />
-            </PublicRoute>
           }
         />
 
@@ -191,6 +190,7 @@ const App = () => {
               <GoldenSeatsTable />
             </PublicRoute>
           }
+
         />
 
         <Route
