@@ -9,7 +9,6 @@ export const fetchItems = async (setItems) => {
       if (!response.ok) throw new Error("Failed to fetch data");
   
       const result = await response.json();
-      console.log("Fetched Items:", result);
   
       // Check if response contains an array inside "data"
       if (result.success && Array.isArray(result.data)) {
